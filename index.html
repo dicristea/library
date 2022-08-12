@@ -8,10 +8,52 @@
     <link href="style.css" rel="stylesheet">
     <script src="main.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
 </head>
 <body>
-<div id="conatiner">
-    
+<div id="container">
+    <div class="header">
+        <h1>My Library</h1>
+    </div>
+    <div class="subheader">
+        <div class="subheader-text">
+            Sort By:
+            <ul>
+                <li>
+                    <img src="images/title.png" alt="Title Icon">
+                    Title
+                </li>
+                <li>
+                    <img src="images/author.png" alt="Author Icon">
+                    Author
+                </li>
+                <li>
+                    <img src="images/status.png" alt="Status Icon">
+                    Status
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="book-card-container">
+        <div class="card-container">
+            <div class="card">
+                <h3 class="card-title">Book Title 1</h3>
+                <p class="card-author">Author of Book Title 1</p>
+                <div class="card-icons">
+                    <button type="button" class="read-button">Read</button>
+                    <button type="button" class="star-button"><img class="star" src="images/star.svg" alt="Star" title="Add to Starred"></button>
+                    <button type="button" class="share-button"><img class="share" src="images/share.svg" alt="Share" title="Share"></button>
+                </div>
+            </div>
+            <div class="card add">
+                <button type="button" class="add-book-button"><img class="add-book" src="images/add.png" alt="Add Book" title="Add Book to Library"></button>
+            </div>
+            
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

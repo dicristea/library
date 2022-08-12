@@ -1,3 +1,5 @@
+let myLibrary = [];
+
 function Book(title, author, pages, isRead) {
     this.title = title;
     this.author = author;
@@ -12,3 +14,7 @@ function Book(title, author, pages, isRead) {
 
 const book = new Book('Harry Potter', 'Lady', 700, true);
 console.log(book.info()); 
+
+function addBookToLibrary () {
+    // do stuff here
+};
