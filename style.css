@@ -1,0 +1,29 @@
+:root {
+    --light-text: white;
+    --dark-text: rgb(6, 6, 6);
+    --body-color: rgb(225, 225, 225);
+    --main-color: rgb(34, 142, 204);
+    --card-color: white;
+    --accent: rgb(241, 152, 124);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: var(--body-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template: 0.8fr 5fr / 1fr 5fr;
+}
