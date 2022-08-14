@@ -15,23 +15,31 @@
 <body>
 <div id="container">
     <div class="header">
-        <h1>My Library</h1>
+        <div class="clouds"><img src="images/cloud.png" alt="Cloud" class="clouds-img"></div>
+        <h1 class="title">My Library</h1>
+        <div class="clouds"><img src="images/clouds.png" alt="Cloud" class="clouds-img"></div>
     </div>
     <div class="subheader">
         <div class="subheader-text">
             Sort By:
             <ul>
                 <li>
-                    <img src="images/title.png" alt="Title Icon">
-                    Title
+                    <button class="sort-button">
+                        <img src="images/title.png" alt="Title Icon">
+                        Title
+                    </button>
                 </li>
                 <li>
-                    <img src="images/author.png" alt="Author Icon">
-                    Author
+                    <button class="sort-button">
+                        <img src="images/author.png" alt="Author Icon">
+                        Author
+                    </button>
                 </li>
                 <li>
-                    <img src="images/status.png" alt="Status Icon">
-                    Status
+                    <button class="sort-button">
+                        <img src="images/status.png" alt="Status Icon">
+                        Status
+                    </button>
                 </li>
             </ul>
         </div>
@@ -39,8 +47,12 @@
     <div class="book-card-container">
         <div class="card-container">
             <div class="card">
-                <h3 class="card-title">Book Title 1</h3>
-                <p class="card-author">Author of Book Title 1</p>
+                <h3 class="card-title">Harry Potter Series</h3>
+                <p class="card-author">J. K. Rowling</p>
+                <div class="card-pages">
+                    Pages: 
+                    <div class="number-of-pages">3,417</div>
+                </div>
                 <div class="card-icons">
                     <button type="button" class="read-button">Read</button>
                     <button type="button" class="star-button"><img class="star" src="images/star.svg" alt="Star" title="Add to Starred"></button>

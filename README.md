@@ -19,3 +19,6 @@ Author Icon:
 
 Add Icon:
 <a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by Fuzzee - Flaticon</a>
+
+Clouds:
+<a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Freepik - Flaticon</a>

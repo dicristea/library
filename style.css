@@ -1,5 +1,4 @@
 :root {
-    --light-text: white;
     --dark-accent: #502581;
     --body-color: rgb(244, 240, 245);
     --main-color: rgb(34, 142, 204);
@@ -51,21 +50,39 @@ button, fieldset, input {
 .header {
     font-family: 'Aboreto', cursive;
     background-color: rgb(201, 170, 230);
+    padding: 10px 30px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
     align-items: center;
+}
+
+h1.title {
+    font-size: 3rem;
+}
+
+.clouds {
+    flex: 1;
+}
+
+.clouds-img {
+    height: auto;
+    width: 200px;
 }
 
 /* Subheader */
 
 .subheader {
-    border-top: 1px solid purple;
-    border-bottom: 1px solid purple;
+    background-color: white;
+    border-top: 1.5px solid purple;
+    border-bottom: 1.5px solid purple;
     display: flex;
     padding: 10px 20px;
 }
 
 .subheader-text {
+    font-size: 1.2rem;
     flex: 1;
     display: flex;
     gap: 20px;
@@ -83,31 +100,34 @@ ul {
     justify-content: center;
 }
 
-li {
+li>button {
     padding: 3px 0;
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    gap: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
-li>img {
+.sort-button>img {
     align-self: center;
     justify-self: center;
     height: auto;
-    width: 20px;
+    width: 1.2rem;
 }
 
 /* Main Content */
 
 .book-card-container {
-    padding: 16px 32px 20px 32px;
+    padding: 32px 32px 20px 32px;
     text-align: left;
 }
 
 .card-container {
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 500px))
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.3fr));
+    grid-auto-rows: 12rem;
+    justify-content: center;
 }
 
 .card {
@@ -121,8 +141,12 @@ li>img {
     flex-direction: column;
 }
 
-.card-text {
-    min-height: 100px;
+.card-title, .card-author, .card-pages, .card-icons {
+    flex: 1;
+}
+
+.number-of-pages {
+    display: inline-block;
 }
 
 .card-icons {
@@ -169,6 +193,6 @@ button>img {
     transition: 0.5s;
 }
 
-.add-book-button:hover {
-    background-color: var(--accent);
+.add-book-button:hover, .read-button:hover {
+    background-color: var(--body-color);
 }
