@@ -47,25 +47,76 @@
     <div class="book-card-container">
         <div class="card-container">
             <div class="card">
-                <h3 class="card-title">Harry Potter Series</h3>
+                <div class="card-header">
+                    <h3 class="card-title">Harry Potter Series</h3>
+                    <button type="button" class="remove-button" onclick="removeBook()">
+                        <img class="remove" src="images/close.svg" alt="Remove" title="Remove Book from Library">
+                    </button>
+                </div>
                 <p class="card-author">J. K. Rowling</p>
                 <div class="card-pages">
                     Pages: 
                     <div class="number-of-pages">3,417</div>
                 </div>
                 <div class="card-icons">
-                    <button type="button" class="read-button">Read</button>
-                    <button type="button" class="star-button"><img class="star" src="images/star.svg" alt="Star" title="Add to Starred"></button>
+                    <button type="button" class="read-button" onclick="changeReadStatus()">
+                        Read
+                    </button>
+                    <button type="button" class="star-button">
+                        <img class="star" src="images/star.svg" alt="Star" title="Add to Starred">
+                    </button>
                     <button type="button" class="share-button"><img class="share" src="images/share.svg" alt="Share" title="Share"></button>
                 </div>
             </div>
             <div class="card add">
-                <button type="button" class="add-book-button"><img class="add-book" src="images/add.png" alt="Add Book" title="Add Book to Library"></button>
-            </div>
-            
+                <button type="button" title="Add Book to Library" class="add-book-button" onclick="openForm()">
+                    <img class="add-book" src="images/add.png" alt="Add Book" title="Add Book to Library">
+                </button>
             </div>
         </div>
+        <div id="bookFormPopup">
+            <form action="..." method="post" class="form-container">
+                <div class="form-header">
+                    <h2>Add a Book</h2>
+                    <button type="button" class="close-button" onclick="closeForm()">
+                        <img class="close" src="images/close.svg" alt="Close" title="Close Form">
+                    </button>
+                </div>
+                <label for="title">
+                    <strong>Book Title</strong>
+                </label>
+                <input type="text" id="title" placeholder="Book Title" name="title" required>
+                    
+                <label for="author">
+                    <strong>Author</strong>
+                </label>
+                <input type="text" id="author" placeholder="Author" name="author" required>
+                    
+                <label for="pages">
+                    <strong>Page Count</strong>
+                </label>
+                <input type="number" id="pages" name="pages" placeholder="Page Count" required>
+                    
+                    
+                <fieldset>
+                    <legend><strong>Have you read the book?</strong></legend>
+                    <div class="read-radio">
+                        <div>
+                            <input type="radio" id="read" name="read" value="true" checked>
+                            <label for="read">Read</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="unread" name="read" value="false">
+                            <label for="unread">Unread</label>
+                        </div>
+                    </div>
+                </fieldset>
+                    
+                <button type="submit" class="submit-button">Add Book</button>
+            </form>
+        </div>
     </div>
+    <footer>ddtea ⚜ 2022</footer>
 </div>
 </body>
 </html>
