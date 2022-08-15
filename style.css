@@ -140,49 +140,35 @@ li>button {
     flex-direction: column;
 }
 
-.card-header, .card-author, .card-pages, .card-icons {
+.card-title, .card-author, .card-pages, .card-btns {
     flex: 1;
 }
 
-.card-header,
 .form-header {
     display: flex;
 }
 
-
-.number-of-pages {
-    display: inline-block;
-}
-
-.card-icons {
+.card-btns {
     margin-top: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
-button>img {
-    width: 25px;
-    height: auto;
-}
-
-.read-button {
+.read-button, .remove-button {
+    width: min-content;
     padding: 5px 25px;
     border: 1px solid lightgray;
     border-radius: 5px;
     color: var(--dark-accent);
 }
 
-.star-button, 
-.remove-button, 
 .close-button {
     justify-self: flex-end;
     margin-left: auto;
 }
 
-.star-button, 
-.share-button, 
-.remove-button, 
 .close-button {
     display: flex;
     align-items: center;
@@ -203,7 +189,14 @@ button>img {
     transition: 0.5s;
 }
 
-.add-book-button:hover, .read-button:hover {
+button>img {
+    width: 25px;
+    height: auto;
+}
+
+.add-book-button:hover, 
+.read-button:hover, 
+.remove-button:hover {
     background-color: var(--body-color);
 }
 
