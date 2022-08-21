@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Book Library</title>
     <link href="style.css" rel="stylesheet">
     <script src="main.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -46,19 +46,6 @@
     </div>
     <div class="book-card-container">
         <div class="card-container">
-            <div class="card">
-                <h3 class="card-title">Harry Potter Series</h3>
-                <p class="card-author">J. K. Rowling</p>
-                <p class="card-pages">Pages: 3,417</p>
-                <div class="card-btns">
-                    <button type="button" class="read-button" onclick="changeReadStatus()">
-                        Read
-                    </button>
-                    <button type="button" class="remove-button" onclick="removeBook()">
-                        Remove
-                    </button>
-                </div>
-            </div>
             <div class="card add">
                 <button type="button" title="Add Book to Library" class="add-book-button" onclick="openForm()">
                     <img class="add-book" src="images/add.png" alt="Add Book" title="Add Book to Library">
@@ -66,7 +53,7 @@
             </div>
         </div>
         <div id="bookFormPopup">
-            <form action="..." method="post" class="form-container">
+            <form method="post" class="form-container">
                 <div class="form-header">
                     <h2>Add a Book</h2>
                     <button type="button" class="close-button" onclick="closeForm()">
@@ -103,7 +90,9 @@
                     </div>
                 </fieldset>
                     
-                <button type="submit" class="submit-button">Add Book</button>
+                <button type="submit" class="submit-button">
+                    Add Book
+                </button>
             </form>
         </div>
     </div>
